@@ -5,7 +5,7 @@ module "sg" {
   description = "Security group for netflix clone server"
   vpc_id      = var.vpc_id
 
-  ingress_with_cidr_blocks = [
+  egress_with_cidr_blocks = [
     {
       from_port   = 8080
       to_port     = 8080
